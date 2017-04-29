@@ -1,2 +1,6 @@
 # RCode
-Personal files with R Code. Just for fun and learning!
+
+**Ian Castillo**
+**Mexico City**
+
+Repository to store research code made in R. To learn and fun.
