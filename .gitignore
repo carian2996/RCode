@@ -1,0 +1,13 @@
+*.Rproj
+*.html
+*.jpg
+*.pdf
+
+*/.Rproj.user/
+actuaryJobsMx/actuary-jobs-mx_cache/
+actuaryJobsMx/actuary-jobs-mx_files/
+actuaryJobsMx/report_cache/
+actuaryJobsMx/report_files/
+actuaryJobsMx/rsconnect/
+
+imgrecTwitter/packrat/
