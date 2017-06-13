@@ -9,22 +9,24 @@
 # binary system put it into a matrix and sent the message.
 # Spaces are represented as zero rows.
 
-encoder <- function(message, matrix=TRUE) {
+function(message, matrix=TRUE) {
+    
+    message <- "listo!! ya quedo el tuyo?"
     
     # message (character): The message to encode
     # matrixx (boolean): Should the result be printed as a matrix?
     #                    If not, printed so you can converted as a vector.
     
     if (is.character(message)) {
-        # Clean message and only keep letters and spaces
-        message <- gsub("[^\\p{L}']+", " ", message, perl = TRUE)
+        
+        alphabet <- c(letters, 'kkkk', ',', '.', '?', '!')
         
         # Split the message into a vector of lower letters
         letts <- strsplit(message, "")[[1]]
         letts <- tolower(letts)
         
         # Match every letter with the position in the alphabet
-        ints <- match(letts, letters)
+        ints <- match(letts, alphabet)
         # Replace spaces with zeros
         ints[is.na(ints)] <- 0
         
