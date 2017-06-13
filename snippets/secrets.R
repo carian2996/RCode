@@ -54,6 +54,7 @@ decoder <- function(secret) {
         ints[ints == 0] <- 27
         
         # Return the message
-        return(paste(c(letters, " ")[ints], collapse = ""))
+        alphabet <- c(letters, " ", ',', '.', '?', '!')
+        return(paste(alphabet[ints], collapse = ""))
     }
 }
