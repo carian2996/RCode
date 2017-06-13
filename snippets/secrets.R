@@ -11,8 +11,6 @@
 
 function(message, matrix=TRUE) {
     
-    message <- "listo!! ya quedo el tuyo?"
-    
     # message (character): The message to encode
     # matrixx (boolean): Should the result be printed as a matrix?
     #                    If not, printed so you can converted as a vector.
