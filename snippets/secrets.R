@@ -9,7 +9,7 @@
 # binary system put it into a matrix and sent the message.
 # Spaces are represented as zero rows.
 
-function(message, matrix=TRUE) {
+encoder <- function(message, matrix=TRUE) {
     
     # message (character): The message to encode
     # matrixx (boolean): Should the result be printed as a matrix?
