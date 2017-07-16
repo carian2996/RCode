@@ -16,15 +16,15 @@ encoder <- function(message, matrix=TRUE) {
     #                    If not, printed so you can converted as a vector.
     
     if (is.character(message)) {
-        # Clean message and only keep letters and spaces
-        message <- gsub("[^\\p{L}']+", " ", message, perl = TRUE)
+        
+        alphabet <- c(letters, 'kkkk', ',', '.', '?', '!')
         
         # Split the message into a vector of lower letters
         letts <- strsplit(message, "")[[1]]
         letts <- tolower(letts)
         
         # Match every letter with the position in the alphabet
-        ints <- match(letts, letters)
+        ints <- match(letts, alphabet)
         # Replace spaces with zeros
         ints[is.na(ints)] <- 0
         
@@ -54,6 +54,7 @@ decoder <- function(secret) {
         ints[ints == 0] <- 27
         
         # Return the message
-        return(paste(c(letters, " ")[ints], collapse = ""))
+        alphabet <- c(letters, " ", ',', '.', '?', '!')
+        return(paste(alphabet[ints], collapse = ""))
     }
 }

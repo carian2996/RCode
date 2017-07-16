@@ -5,6 +5,9 @@
 *.icloud
 *.xlsx
 *.csv
+*.gz
+*.Rhistory
+*.Rbuildignore
 
 */.Rproj.user/
 actuaryJobsMx/actuary-jobs-mx_cache/
