@@ -2,6 +2,9 @@
 *.html
 *.jpg
 *.pdf
+*.icloud
+*.xlsx
+*.csv
 
 */.Rproj.user/
 actuaryJobsMx/actuary-jobs-mx_cache/
@@ -11,3 +14,6 @@ actuaryJobsMx/report_files/
 actuaryJobsMx/rsconnect/
 
 imgrecTwitter/packrat/
+.Rproj.user
+
+jumex/
